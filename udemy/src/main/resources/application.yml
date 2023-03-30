@@ -1,0 +1,30 @@
+server:
+  port: 8000
+
+
+spring:
+  profiles:
+    active: dev
+
+
+currency-service:
+  url: "google.com"
+  username: "ankit"
+  key: "yooooo"
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#different logging level
+
+#trace
+#debug
+#info
+#warning
+#error
+
+
+#off

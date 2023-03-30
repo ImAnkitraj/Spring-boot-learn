@@ -1,0 +1,27 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.0.2'
+	id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'com.tekion.spring'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework:spring-core:6.0.3'
+	implementation 'org.springframework:spring-context:6.0.3'
+	implementation 'javax.inject:javax.inject:1'
+	implementation 'de.lars-sh:lombok-annotations:1.18.26'
+	implementation 'com.googlecode.sli4j:sli4j-slf4j:2.0'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

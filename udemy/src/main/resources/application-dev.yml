@@ -1,0 +1,13 @@
+
+server:
+  port: 3000
+
+logging:
+  level:
+    org:
+      springframework: info
+
+currency-service:
+  url: "google.com"
+  username: "ankit"
+  key: "yo"
